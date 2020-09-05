@@ -49,9 +49,6 @@
         android:hint="Digite seu nome"
         />
 
-
-
-
     <TextView
         android:id="@+id/tv_capital"
         android:layout_width="wrap_content"
