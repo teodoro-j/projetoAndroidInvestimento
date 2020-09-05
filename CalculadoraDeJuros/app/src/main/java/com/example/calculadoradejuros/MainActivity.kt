@@ -4,6 +4,7 @@ import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -19,8 +20,26 @@ class MainActivity : AppCompatActivity() {
         val user = et_user.text
 
         /*
+        if(user > 3){
+            Toast.makeText(this, "Não existe nome com menos de 2 Letras", Toast.LENGTH_LONG).show()
+        } else {
+            Toast.makeText(this, "Nome Validade!!", Toast.LENGTH_LONG).show()
+        }
+
+        if(cap > 0 && tx < 0 ) {
+            Toast.makeText(this, "Valor inválido", Toast.LENGTH_LONG).show()
+        } else {
+            Toast.makeText(this, "Preencha o p´roximo campo", Toast.LENGTH_LONG).show()
+        }
+
+        if (tempo < 1 ) {
+            Toast.makeText(this, "Precisa ter pelo menos 1 mês", Toast.LENGTH_LONG).show()
+        } else {
+            Toast.makeText(this, "Prencha o próximo campo", Toast.LENGTH_SHORT).show()
+        }
+
+
         val result = cap * (1 + tx * tempo)
-         */
 
         if(result < 1500){
             tv_result.setTextColor(Color.parseColor("#209E89"))
@@ -32,6 +51,7 @@ class MainActivity : AppCompatActivity() {
             tv_result.setTextColor(Color.parseColor("#5EEBD3"))
             tv_result.text =
         }
+        */
 
 
     }
