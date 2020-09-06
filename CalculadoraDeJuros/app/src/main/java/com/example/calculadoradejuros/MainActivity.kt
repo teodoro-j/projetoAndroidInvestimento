@@ -40,13 +40,13 @@ class MainActivity : AppCompatActivity() {
         val result = realizarCalculo(cap, tx, tempo)
 
         if(result < 1500){
-            tv_result.setTextColor(Color.parseColor("#209E89"))
+            tv_result.setTextColor(Color.parseColor("#D1C93B"))
             tv_result.text = "Sr(a) $user, o seu investimento esta baix!!"
         } else if (result > 3000){
-            tv_result.setTextColor(Color.parseColor("#03DAC5"))
+            tv_result.setTextColor(Color.parseColor("#9E9A5C"))
             tv_result.text = "Sr(a) $user, o seu investimento está acima do esperado!"
         } else {
-            tv_result.setTextColor(Color.parseColor("#5EEBD3"))
+            tv_result.setTextColor(Color.parseColor("#6B6249"))
             tv_result.text = "Sr(a) $user, o seu investimneto está começando a ser produtivo!"
         }
     }

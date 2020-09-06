@@ -4,45 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackgrounfDark"
+    android:background="@color/colorBackgrounfWhite"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorPrimaryLigther"
         android:text="Calculadora de Investimento"
+        android:textColor="@color/colorBackgroundBlue"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:id="@+id/tv_titulo"
         tools:ignore="MissingConstraints"
-        />
+        tools:layout_editor_absoluteY="25dp" />
 
     <TextView
         android:id="@+id/tv_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="75dp"
         android:text="Nome Completo:"
-        android:textColor="@color/colorSecundaryLigther"
+        android:textColor="@color/colorPrimaryGreen"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_marginTop="20dp"
         app:layout_constraintLeft_toLeftOf="200sp"
         app:layout_constraintTop_toBottomOf="@id/tv_titulo"
         tools:ignore="MissingConstraints"
         />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
         android:id="@+id/et_user"
-        android:layout_marginTop="40dp"
-        android:textColor="@color/colorSecundaryLigther"
+        android:layout_marginTop="73dp"
         android:textSize="15sp"
-        android:background="@color/colorPrimaryLigther"
+        android:background="@color"
         app:layout_constraintTop_toBottomOf="@+id/tv_titulo"
         app:layout_constraintLeft_toRightOf="@id/tv_capital"
         android:inputType="textCapWords"
@@ -54,9 +52,9 @@
         android:id="@+id/tv_capital"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:text="Capital Inicial: R$"
-        android:textColor="@color/colorSecundaryLigther"
+        android:textColor="@color/colorPrimaryGreen"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_marginTop="20dp"
@@ -66,11 +64,11 @@
         />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="197dp"
+        android:layout_height="30dp"
         android:id="@+id/et_capital"
         android:layout_marginTop="40dp"
-        android:textColor="@color/colorSecundaryLigther"
+        android:background="@color"
         android:textSize="15sp"
         app:layout_constraintTop_toBottomOf="@+id/tv_user"
         app:layout_constraintLeft_toRightOf="@id/tv_capital"
@@ -84,7 +82,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Taxa de Juros (%):"
-        android:textColor="@color/colorSecundaryLigther"
+        android:textColor="@color/colorPrimaryGreen"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginTop="40dp"
@@ -93,15 +91,16 @@
         />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="187dp"
+        android:layout_height="30dp"
         android:id="@+id/et_taxa"
         android:textSize="15sp"
         app:layout_constraintTop_toBottomOf="@id/tv_capital"
         app:layout_constraintLeft_toRightOf="@id/tv_taxa"
         android:layout_marginLeft="20sp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="40dp"
         android:hint="Digite a Taxa de Juros"
+        android:background="@color"
         android:inputType="number"
         />
 
@@ -111,7 +110,7 @@
         android:layout_height="wrap_content"
         android:text="Tempo de Consórcio:"
         android:layout_marginTop="40dp"
-        android:textColor="@color/colorSecundaryLigther"
+        android:textColor="@color/colorPrimaryGreen"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/tv_taxa"
@@ -119,15 +118,16 @@
         />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="158dp"
+        android:layout_height="30dp"
         android:id="@+id/et_tempo"
         android:textSize="15sp"
         app:layout_constraintTop_toBottomOf="@id/tv_taxa"
         app:layout_constraintLeft_toRightOf="@id/tv_tempo"
         android:layout_marginLeft="20sp"
-        android:layout_marginTop="35dp"
-        android:hint="Digite o tempo do Invest."
+        android:layout_marginTop="40dp"
+        android:background="@color"
+        android:hint="tempo do Investimento."
         android:inputType="number"
         />
 
@@ -138,6 +138,7 @@
         android:text=""
         android:visibility="gone"
         android:textSize="20sp"
+        android:textStyle="bold"
         android:id="@+id/tv_result"
         app:layout_constraintTop_toBottomOf="@id/tv_tempo"
         tools:ignore="MissingConstraints"
@@ -150,11 +151,11 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_result"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="70dp"
         android:onClick="calcular"
         android:text="calcular"
-        android:background="@color/colorPrimaryLigther"
-        android:textColor="@color/colorBackgrounfDark"
+        android:background="@color/colorBackgroundBlue"
+        android:textColor="@color/colorBackgrounfWhite"
         />
 
 
