@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
         val tempo = et_tempo.text
         val user = et_user.text
 
-        /*
         if(user > 3){
             Toast.makeText(this, "Não existe nome com menos de 2 Letras", Toast.LENGTH_LONG).show()
         } else {
@@ -38,18 +37,17 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Prencha o próximo campo", Toast.LENGTH_SHORT).show()
         }
 
-
         val result = cap * (1 + tx * tempo)
 
         if(result < 1500){
             tv_result.setTextColor(Color.parseColor("#209E89"))
-            tv_result.text =
+            tv_result.text = "Sr(a) $user, o seu investimento esta baix!!"
         } else if (result > 3000){
             tv_result.setTextColor(Color.parseColor("#03DAC5"))
-            tv_result.text =
+            tv_result.text = "Sr(a) $user, o seu investimento está acima do esperado!"
         } else {
             tv_result.setTextColor(Color.parseColor("#5EEBD3"))
-            tv_result.text =
+            tv_result.text = "Sr(a) $user, o seu investimneto está começando a ser produtivo!"
         }
         */
 
