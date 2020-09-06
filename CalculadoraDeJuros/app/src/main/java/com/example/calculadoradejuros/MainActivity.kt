@@ -52,6 +52,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun realizarCalculo(cap:Double, tx:Double, tempo:Int):Double{
-        return cap * (1 + tx * tempo)
+        return cap + (cap * (1 + (tx/100) * tempo))
     }
 }
