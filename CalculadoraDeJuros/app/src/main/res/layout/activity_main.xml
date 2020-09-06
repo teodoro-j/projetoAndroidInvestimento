@@ -42,6 +42,7 @@
         android:layout_marginTop="40dp"
         android:textColor="@color/colorSecundaryLigther"
         android:textSize="15sp"
+        android:background="@color/colorPrimaryLigther"
         app:layout_constraintTop_toBottomOf="@+id/tv_titulo"
         app:layout_constraintLeft_toRightOf="@id/tv_capital"
         android:inputType="textCapWords"
